@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>전북과고 필수 프로그램 모음집</title>
+    <style>
+        @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+        @import url(//fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+        @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+        body {
+            background-color: rgb(37, 37, 37);
+            color: rgb(205, 205, 205)
+        }
+
+        .title {
+            font-family: 'Hanna', sans-serif;
+            font-size: 40px;
+            background: linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple);
+            color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        .tableOfContents {
+            font-size: 25px;
+            font-weight: bold;
+            box-align: center;
+        }
+
+        .main {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration-line: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <div style="text-align: center;">
+        <a href=".\flash.html"><span class="title">대-전북과학고 학생들을 위한 알아놓으면 어딘가엔 써먹는 프로그램들 모음</span></a>
+        <br><br>
+    </div>
+
+    <div class="tableOfContents"
+        style="padding:10px; margin: 0 auto; width: 500px; height: auto; background-color:rgb(20, 20, 20);">
+        <ol start=0>
+            <li>목차</li>
+            <li><a href="#intro" style="color:rgb(205, 205, 205)">서론</a></li>
+            <li><a href="#coding" style="color:rgb(205, 205, 205)">코딩</a></li>
+            <ol>
+                <li><a href="#vscode" style="color: dodgerblue;">Visual Studio Code</a></li>
+                <ul>
+                    <li><a href="#copilot" style="color: rgb(38, 69, 211);">Copilot</a></li>
+                    <li><a href="#tabnine" style="color:blueviolet">Tabnine</a></li>
+                </ul>
+                <li><a href="#git&github" style="color: grey">Git & Github</a></li>
+                <li><a href="#stackOverflow" style="color: orange">Stack Overflow</a></li>
+            </ol>
+            <li><a href="#math" style="color:rgb(205, 205, 205)">수학</a></li>
+            <ol>
+                <li><a href="#geogebra" style="color: green">Geogebra & Desmos</a></li>
+                <li><a href="#wolfram" style="color: crimson">Wolfram Alpha & Wolfram Cloud</a></li>
+            </ol>
+            <li><a href="#videoEditing" style="color:rgb(205, 205, 205)">영상 편집</a></li>
+            <ol start=0>
+                <li><del>키네마스터</del></li>
+                <li><a href="#davinci" style="color:brown">Davinci Resolve</a></li>
+                <li><a href="#premiere" style="color:darkmagenta">Adobe Premiere Pro</a></li>
+            </ol>
+            <li><del>2309 김현성</del></li>
+            <li><a href="#ending" style="color:rgb(205, 205, 205)">결론</a></li>
+        </ol>
+    </div><br><br>
+
+    <div class="main" style="padding:10px; margin: 0 auto; width: 700px; height: auto">
+        <div id="intro">
+            <h2>서론</h2>
+            본 웹페이지는 전북과고 학생들을 위한 알아놓으면 어딘가 써먹을지도 모르는 프로그램들과 웹사이트들의 모음집으로써,
+            필자가 정보부인 관계로 코딩 파트만 뭔가 전문적인것 같다면 착각은 아닐것이다. 최대한 무료 프로그램들로 구성하려 노력했으나...
+            마지막 영상 편집 부분만은 어쩔 수 없었다. 부디 이해해 주길. 뭔가 서론이 쓸데없이 길어지고 멍멍거리는 소리로 가득차고 있는
+            것 같으니 이만 줄이고 본문으로 넘어가자.
+        </div>
+
+        <br><br>
+
+        <div style="color:crimson">본 웹페이지는 필자가 시험 끝나고 멘탈 터진 채로 만들어서 뇌피셜과 멍소리가 많다.
+            주의하시길 바란다.</div>
+
+        <div id="coding">
+            <h2>코딩</h2>
+            이름 그대로 코딩과 관련된 프로그램들을 모아보았다. 긴 말 할 것 없이 바로 시작해보자.
+
+            <div id="vscode">
+                <h3>Visual Studio Code</h3>
+                가장 많이 쓰이는 텍스트 에디터 중 하나인 Visual Studio Code. 흔히 VSCode라 부른다. MS에서 개발한 텍스트 에디터인데,
+                무료 오픈소스에 커스터마이징이 가능하고, 정말 강력한 기능들을 확장을 설치할 수 있어 프로그래머들이 애용한다.
+                예를 들어, Formatter라는 확장을 이용하면 코드를 이쁘게 알아서 고쳐주고, 화면 테마와 아이콘도 이쁘게 만들 수 있다!
+                (물론 여기서 이쁘다의 기준은 어디까지나 공돌이들의 기준이다. 마음에 안든다면 공돌이들을 탓하자)
+                심지어 프로그램이 매우 가벼워서 저사양 컴에서도 꽤나 빠르게 돌아간다. 자동완성 기능도 매우 좋아서 코딩할 때 써보도록 하자.
+                <br>
+                <a href="https://code.visualstudio.com/" target="_blank"
+                    style="color: dodgerblue; font-size: larger; font-weight: bold;">VSCode 홈페이지</a>
+                <br><br>
+
+                기왕 VSCode 알아본 김에 인공지능을 이용한 코드 자동완성 확장도 알아보자.
+
+                <div id="copilot">
+                    <h4>Copilot</h4>
+                    Copilot은 Github에서 개발한 코드 자동완성 인공지능으로, VSCode에서 코딩을 하고 있으면 자동으로 다음 코드를 추천해준다.
+                    그런데 이 기능이 정말 강력한 것이, 간단한 계산기 같은 프로그램은 주석만 잘 입력하면 Copilot만을 이용해서도 만들 수 있다.
+                    단점이라면 현재 베타 테스트 중이라 신청을 하고 승인을 해줘야 사용 가능하지만... 실은 VSCode와 Github 계정이 연동
+                    되어 있으면 거의 바로 해주는 듯 하다(뇌피셜 주의). 그리고 이 인공지능이 Github의 퍼블릭 소스코드를 이용해 학습된
+                    것이라 저작권 문제가 발생할 수 있어서 실무에서는 쓰이지 않는다고 한다.
+                    <br>
+                    <a href="https://copilot.github.com/" target="_blank"
+                        style="color:rgb(38, 69, 211); font-size: larger; font-weight: bold;">Copilot</a>
+                </div>
+
+                <div id="tabnine">
+                    <h4>Tabnine</h4>
+                    Tabnine도 Copilot처럼 인공지능을 활용해 코드를 자동으로 추천해주는 확장인데, 조금 다른 점은 Copilot은 코드를
+                    여러 줄을 한 번에 추천하지만, Tabnine은 코드를 한 단어, 또는 한 줄 정도를 추천해준다. 둘 중 취향에 맞게 골라쓰면
+                    되겠다. 물론 둘 다 무료다.
+                </div>
+            </div>
+
+            <div id="git&github">
+                <h3>Git & Github</h3>
+                Git과 Github는 일반적인 수준에서는 거의 쓸일이 없는 기능이므로... 코딩에 별로 관심이 없으면 그냥 깔끔하게 스킵하자.
+                <br>
+                Git은 분산 버전 관리 시스템이란 건데, 자세히 말하면 머리 아프니까 간략히 설명하자면 파일의 변경사항을 추적하고 여러
+                명의 사용자들 간에 해당 파일들의 변경사항을 알려주는 기능이다. 음... 그냥 소스 코드를 관리하고 협업할 때 사용하는
+                친구다. tmi로 Git은 리누스 토르발즈라는 개발자가 만들었는데 이 아저씨가 리눅스의 개발자이다. 아무리봐도 사람은
+                아닌 것 같다. 여튼 그런 Git 저장소를 온라인에 업로드하고 공유할 수 있도록 만든 웹 사이트이다. 처음 배우기는 어렵지만
+                일단 배워 놓으면 실무에서도 많이 써먹는 애들이기 때문에 언젠가는 배워볼 것을 추천한다. 유튜브 뒤져보면 강의는 많을 것이다.
+                <br>
+                <a href="https://github.com/" target="_blank"
+                    style="color:grey; font-size: larger; font-weight: bold;">Github</a>
+            </div>
+
+            <div id="stackOverflow">
+                <h3>Stack Overflow</h3>
+                전 세계의 개발자들의 포럼 같은 곳이다. 혹시 코딩하다 생긴 오류를 구글에 검색해봤으면 한 번쯤은 봤을 사이트인데,
+                아무래도 수많은 개발자들이 애용하는 사이트이기 때문에 정말 수많은 케이스들에 대한 해답이 있다. 딱 한가지 아쉬운 점은
+                영어라는거... 물론 자동 번역 기능이라도 쓰면 대충 알아는 들을 수 있어서 괜찮다. 혹시 코딩을 하다 모르는게 생기면 한
+                번 찾아가서 검색해보자. 아마 똑같은 일을 겪었던 많은 뉴비들의 하소연 글과 고인물들의 답변이 기다리고 있을 것이다.
+                <br>
+                <a href="https://stackoverflow.com/" target="_blank"
+                    style="color: orange; font-size: larger; font-weight: bold;">
+                    Stack Overflow</a>
+                <br><br>
+            </div>
+        </div>
+
+        <div id="math">
+            <h2>수학</h2>
+            이번에는 수학에 관련된 웹사이트들이다. 역시 바로 시작해보자.
+            <div id="geogebra">
+                <h3>Geogebra & Desmos</h3>
+                지오지브라와 데스모스는 온라인 그래프 계산기로, 이름 그대로 온라인에서 자유롭게 그래프와 도형을 그리며 계산할 수 있다.
+                지오지브라와 데스모스를 한군데에서 소개하고 있긴 하지만 이 둘은 조금 성격이 다르다. 지오지브라에 훨씬 많은 기능들이
+                있고, 지오지브라는 도형의 작도 등도 가능하지만, 데스모스에 비해 느리다는 단점이 있다. 필자 개인적으로는 지오지브라의
+                많은 기능들 중 극히 일부만 사용하기 때문에 더 빠른 데스모스를 선호하긴 하지만 취향의 문제이니 원하는 대로 골라 사용하면
+                되겠다.
+                <br>
+                <a href="https://www.geogebra.org/?lang=ko" target="_blank"
+                    style="color:green; font-size: larger; font-weight: bold;">Geogebra</a>
+                <br>
+                <a href="https://www.desmos.com/?lang=ko" target="_blank"
+                    style="color:green; font-size: larger; font-weight: bold;">Desmos</a>
+            </div>
+
+            <div id="wolfram">
+                <h3>Wolfram Alpha & Wolfram Cloud</h3>
+                공대생들의 영원한 친구들 중 하나, 울프람 알파(일명 킹프람 갓파)는 수학에 관련된 질문을 하면 그 질문에 대한 해답을 알려준다.
+                당연히 수식을 입력하면 정답이 나오고 자연어로 입력해도 알맞는 해답이 나온다. 수학뿐만 아니라 과학 분야나 인문학
+                분야의 지식들도 엄청난 양이 입력되어 있어서 일단 궁금한거 찾아보면 왠만하면 나온다. 심지어 인물이나 캐릭터를 그래프로
+                그려서 보여주기도 한다. 울프람 알파는 Mathematica라는 프로그래밍 언어에 의해 작동되는데, 이 Mathematica를 사용할
+                수 있는 곳이 울프람 클라우드이다. 은근 재미있으니 수학과 정보에 관심있는 친구들은 한 번 도전해보자.
+                <br>
+                <a href="https://www.wolframalpha.com/" target="_blank"
+                    style="color:crimson; font-size: larger; font-weight: bold;">Wolfram Alpha</a>
+                <br>
+                <a href="https://www.wolframcloud.com/" target="_blank"
+                    style="color:crimson; font-size: larger; font-weight: bold;">Wolfram Cloud</a>
+            </div>
+        </div>
+
+        <div id="videoEditing">
+            <h2>영상 편집</h2>
+            자주는 아니지만 그래도 가끔가다 한 번씩 영상 편집이 필요한 순간들이 찾아온다. 그럴 때 키네마스터를 쓸 순 없으니 좀 괜찮은
+            무료 영상 편집기를 알아보고 그 뒤에 아주 유-명한 (비싼) 편집기도 알아보자.
+
+            <div id="davinci">
+                <h3>DaVinci Resolve</h3>
+                다빈치 리졸브가 무료 영상 편집 프로그램 중에서는 가장 최고인 것 같다. 이 프로그램은 영상 편집 실무에서도 가끔 쓰이는
+                상당히 전문적인 프로그램이다. 처음 배우기는 조금 빡세도 일단 배워놓으면 정말 까먹기 직전 쯤마다 한 번씩은 쓸일이 생긴다.
+                유튜브 뒤져보면 꽤나 좋은 강의들 많으니 한 번 찾아서 배워보면 후회하지는 않을 거다. 아, 그리고 이 프로그램은 영상 편집
+                프로그램이니 당연스럽게도 배터리를 정말 많이 <del>처</del>먹고 권장 요구 사항도 낮진 않다. 몰론 최소를 맞추는 것은 쉽지만
+                여러분들의 컴퓨터가 살려달라고 비명을 지르니 본인의 컴퓨터 사양이 너무 낮으면 아예 이런 전문 프로그램은 추천하지 않는다.
+                <br>
+                <a href="https://www.blackmagicdesign.com/products/davinciresolve/" target="_blank"
+                    style="color: brown; font-size: larger; font-weight: bold;">Davinci Resolve Download</a>
+            </div>
+
+            <div id="premiere">
+                <h3>Premiere Pro</h3>
+                프리미어 프로는 아마 현재 가장 많이 쓰이는 영상 편집 프로그램일 것이다. 대규모 편집 작업에서는 가장 많이 쓰이는 프로그램이며,
+                그만큼 성능도 뛰어나고 일단 써보면 제대로 전문가용이구나가 느껴진다. 하지만 그만큼 더럽게 비싸다. 정액제 형식으로 월에
+                24,000원씩인데, 물론 영상 편집이 생업인 사람들에게는 충분히 투자할만한 돈이지만 취미로써는 싼 가격은 아니다. 그러니 본인이
+                돈이 좀 있거나 영상 편집을 좋아해서 정액제를 지르고 있는 <del>흑우</del>사람들은 쓰는걸 적극 추천한다.
+                <br>
+                <a href="https://c11.kr/z33m" target="_blank"
+                    style="color:darkmagenta; font-size: larger; font-weight: bold;">Premiere Pro</a>
+            </div>
+        </div>
+
+        <div id="ending">
+            <h2>결론</h2>
+            자, 이렇게 해서 각 분야별로 알아놓으면 언젠간 쓸데 있을 프로그램들을 소개해봤다. 아마 빼먹은 것들도 좀 많긴 하겠지만
+            모두를 적기엔 여백이 부족하여(???) 적지 않도록 하겠다. 그럼 이 모음집들이 조금이나마 도움이 됐기를!
+        </div>
+    </div>
+</body>
+
+</html>
