@@ -1,0 +1,45 @@
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+    background-color: rgb(37, 37, 37);
+    color: rgb(205, 205, 205);
+}
+
+.title {
+    font-family: 'Hanna', sans-serif;
+    font-size: 40px;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.tableOfContents {
+    font-size: 25px;
+    font-weight: bold;
+    box-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    width: 500px;
+    height: auto;
+    background-color: rgb(20, 20, 20);
+    color: rgb(205, 205, 205);
+}
+
+.main {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+}
+
+.hyperlink {
+    font-size: larger;
+    font-weight: bold;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}

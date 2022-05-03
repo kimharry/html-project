@@ -4,43 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>전북과고 필수 프로그램 모음집</title>
-    <style>
-        @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
-        @import url(//fonts.googleapis.com/earlyaccess/jejuhallasan.css);
-        @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-
-        body {
-            background-color: rgb(37, 37, 37);
-            color: rgb(205, 205, 205)
-        }
-
-        .title {
-            font-family: 'Hanna', sans-serif;
-            font-size: 40px;
-            background: linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple);
-            color: transparent;
-            -webkit-background-clip: text;
-        }
-
-        .tableOfContents {
-            font-size: 25px;
-            font-weight: bold;
-            box-align: center;
-        }
-
-        .main {
-            font-family: 'Noto Sans KR', sans-serif;
-            font-size: 20px;
-        }
-
-        a {
-            text-decoration-line: none;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -50,14 +14,13 @@
         <br><br>
     </div>
 
-    <div class="tableOfContents"
-        style="padding:10px; margin: 0 auto; width: 500px; height: auto; background-color:rgb(20, 20, 20);">
+    <div class="tableOfContents">
         <ol start=0>
             <li>목차</li>
-            <li><a href="#intro" style="color:rgb(205, 205, 205)">서론</a></li>
-            <li><a href="#coding" style="color:rgb(205, 205, 205)">코딩</a></li>
+            <li><a href="#intro" style="color: rgb(205, 205, 205);">서론</a></li>
+            <li><a href="#coding" style="color: rgb(205, 205, 205);">코딩</a></li>
             <ol>
-                <li><a href="#vscode" style="color: dodgerblue;">Visual Studio Code</a></li>
+                <li><a href="#vscode" style="color: dodgerblue">Visual Studio Code</a></li>
                 <ul>
                     <li><a href="#copilot" style="color: rgb(38, 69, 211);">Copilot</a></li>
                     <li><a href="#tabnine" style="color:blueviolet">Tabnine</a></li>
@@ -94,6 +57,7 @@
 
         <div style="color:crimson">본 웹페이지는 필자가 시험 끝나고 멘탈 터진 채로 만들어서 뇌피셜과 멍소리가 많다.
             주의하시길 바란다.</div>
+        <br>
 
         <div id="coding">
             <h2>코딩</h2>
@@ -107,8 +71,8 @@
                 (물론 여기서 이쁘다의 기준은 어디까지나 공돌이들의 기준이다. 마음에 안든다면 공돌이들을 탓하자)
                 심지어 프로그램이 매우 가벼워서 저사양 컴에서도 꽤나 빠르게 돌아간다. 자동완성 기능도 매우 좋아서 코딩할 때 써보도록 하자.
                 <br>
-                <a href="https://code.visualstudio.com/" target="_blank"
-                    style="color: dodgerblue; font-size: larger; font-weight: bold;">VSCode 홈페이지</a>
+                <a href="https://code.visualstudio.com/" target="_blank" class="hyperlink"
+                    style="color: dodgerblue;">VSCode 홈페이지</a>
                 <br><br>
 
                 기왕 VSCode 알아본 김에 인공지능을 이용한 코드 자동완성 확장도 알아보자.
@@ -121,15 +85,19 @@
                     되어 있으면 거의 바로 해주는 듯 하다(뇌피셜 주의). 그리고 이 인공지능이 Github의 퍼블릭 소스코드를 이용해 학습된
                     것이라 저작권 문제가 발생할 수 있어서 실무에서는 쓰이지 않는다고 한다.
                     <br>
-                    <a href="https://copilot.github.com/" target="_blank"
-                        style="color:rgb(38, 69, 211); font-size: larger; font-weight: bold;">Copilot</a>
+                    <a href="https://copilot.github.com/" target="_blank" class="hyperlink"
+                        style="color:rgb(38, 69, 211);">Copilot 홈페이지</a>
                 </div>
 
                 <div id="tabnine">
                     <h4>Tabnine</h4>
                     Tabnine도 Copilot처럼 인공지능을 활용해 코드를 자동으로 추천해주는 확장인데, 조금 다른 점은 Copilot은 코드를
-                    여러 줄을 한 번에 추천하지만, Tabnine은 코드를 한 단어, 또는 한 줄 정도를 추천해준다. 둘 중 취향에 맞게 골라쓰면
-                    되겠다. 물론 둘 다 무료다.
+                    여러 줄을 한 번에 추천하지만, Tabnine은 코드를 한 단어 정도만 추천해준다. 그리고, Tabnine이 Copilot보다 많은
+                    종류의 프로그래밍 언어를 제공하고 추천 속도도 더 빠르다는 장점도 있다. 둘 중 취향에 맞게 골라쓰면 되겠다.
+                    물론 둘 다 무료다.
+                    <br>
+                    <a href="https://www.tabnine.com/" target="_blank" class="hyperlink"
+                        style="color: blueviolet;">Tabnine 홈페이지</a>
                 </div>
             </div>
 
@@ -143,8 +111,7 @@
                 아닌 것 같다. 여튼 그런 Git 저장소를 온라인에 업로드하고 공유할 수 있도록 만든 웹 사이트이다. 처음 배우기는 어렵지만
                 일단 배워 놓으면 실무에서도 많이 써먹는 애들이기 때문에 언젠가는 배워볼 것을 추천한다. 유튜브 뒤져보면 강의는 많을 것이다.
                 <br>
-                <a href="https://github.com/" target="_blank"
-                    style="color:grey; font-size: larger; font-weight: bold;">Github</a>
+                <a href="https://github.com/" target="_blank" class="hyperlink" style="color:grey;">Github 웹사이트</a>
             </div>
 
             <div id="stackOverflow">
@@ -154,9 +121,8 @@
                 영어라는거... 물론 자동 번역 기능이라도 쓰면 대충 알아는 들을 수 있어서 괜찮다. 혹시 코딩을 하다 모르는게 생기면 한
                 번 찾아가서 검색해보자. 아마 똑같은 일을 겪었던 많은 뉴비들의 하소연 글과 고인물들의 답변이 기다리고 있을 것이다.
                 <br>
-                <a href="https://stackoverflow.com/" target="_blank"
-                    style="color: orange; font-size: larger; font-weight: bold;">
-                    Stack Overflow</a>
+                <a href="https://stackoverflow.com/" target="_blank" class="hyperlink" style="color: orange;">
+                    Stack Overflow 웹사이트</a>
                 <br><br>
             </div>
         </div>
@@ -172,11 +138,11 @@
                 많은 기능들 중 극히 일부만 사용하기 때문에 더 빠른 데스모스를 선호하긴 하지만 취향의 문제이니 원하는 대로 골라 사용하면
                 되겠다.
                 <br>
-                <a href="https://www.geogebra.org/?lang=ko" target="_blank"
-                    style="color:green; font-size: larger; font-weight: bold;">Geogebra</a>
+                <a href="https://www.geogebra.org/?lang=ko" target="_blank" class="hyperlink"
+                    style="color:green;">Geogebra</a>
                 <br>
-                <a href="https://www.desmos.com/?lang=ko" target="_blank"
-                    style="color:green; font-size: larger; font-weight: bold;">Desmos</a>
+                <a href="https://www.desmos.com/?lang=ko" target="_blank" class="hyperlink"
+                    style="color:green;">Desmos</a>
             </div>
 
             <div id="wolfram">
@@ -187,11 +153,11 @@
                 그려서 보여주기도 한다. 울프람 알파는 Mathematica라는 프로그래밍 언어에 의해 작동되는데, 이 Mathematica를 사용할
                 수 있는 곳이 울프람 클라우드이다. 은근 재미있으니 수학과 정보에 관심있는 친구들은 한 번 도전해보자.
                 <br>
-                <a href="https://www.wolframalpha.com/" target="_blank"
-                    style="color:crimson; font-size: larger; font-weight: bold;">Wolfram Alpha</a>
+                <a href="https://www.wolframalpha.com/" target="_blank" class="hyperlink" style="color:crimson;">
+                    Wolfram Alpha</a>
                 <br>
-                <a href="https://www.wolframcloud.com/" target="_blank"
-                    style="color:crimson; font-size: larger; font-weight: bold;">Wolfram Cloud</a>
+                <a href="https://www.wolframcloud.com/" target="_blank" class="hyperlink" style="color:crimson;">
+                    Wolfram Cloud</a>
             </div>
         </div>
 
@@ -208,8 +174,8 @@
                 프로그램이니 당연스럽게도 배터리를 정말 많이 <del>처</del>먹고 권장 요구 사항도 낮진 않다. 몰론 최소를 맞추는 것은 쉽지만
                 여러분들의 컴퓨터가 살려달라고 비명을 지르니 본인의 컴퓨터 사양이 너무 낮으면 아예 이런 전문 프로그램은 추천하지 않는다.
                 <br>
-                <a href="https://www.blackmagicdesign.com/products/davinciresolve/" target="_blank"
-                    style="color: brown; font-size: larger; font-weight: bold;">Davinci Resolve Download</a>
+                <a href="https://www.blackmagicdesign.com/products/davinciresolve/" target="_blank" class="hyperlink"
+                    style="color: brown;">Davinci Resolve 홈페이지</a>
             </div>
 
             <div id="premiere">
@@ -219,8 +185,8 @@
                 24,000원씩인데, 물론 영상 편집이 생업인 사람들에게는 충분히 투자할만한 돈이지만 취미로써는 싼 가격은 아니다. 그러니 본인이
                 돈이 좀 있거나 영상 편집을 좋아해서 정액제를 지르고 있는 <del>흑우</del>사람들은 쓰는걸 적극 추천한다.
                 <br>
-                <a href="https://c11.kr/z33m" target="_blank"
-                    style="color:darkmagenta; font-size: larger; font-weight: bold;">Premiere Pro</a>
+                <a href="https://c11.kr/z33m" target="_blank" class="hyperlink" style="color:darkmagenta;">
+                    Premiere Pro 홈페이지</a>
             </div>
         </div>
 
