@@ -36,6 +36,21 @@ body {
     font-weight: bold;
 }
 
+#toTheTopBtn {
+    position: fixed;
+    bottom: 3%;
+    right: 26%;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: rgb(205, 205, 205);
+    cursor: auto;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
 a {
     text-decoration-line: none;
 }
