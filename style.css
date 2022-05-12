@@ -14,6 +14,16 @@ body {
     -webkit-background-clip: text;
 }
 
+.name {
+    font-family: 'Hanna', sans-serif;
+    font-size: 40px;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple);
+    color: transparent;
+    -webkit-background-clip: text;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
 .tableOfContents {
     font-size: 25px;
     font-weight: bold;
@@ -31,13 +41,13 @@ body {
     font-size: 20px;
     padding: 10px;
     margin: 0 auto;
-    width: 600px;
+    width: 800px;
     height: auto
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .main {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -54,8 +64,8 @@ body {
 
 #toTheTopBtn {
     position: fixed;
-    bottom: 3%;
-    right: 26%;
+    bottom: 30px;
+    right: 25%;
     z-index: 99;
     border: none;
     outline: none;
