@@ -46,6 +46,7 @@ body {
 }
 
 @media (max-width: 900px) {
+
     .main {
         width: 90%;
     }

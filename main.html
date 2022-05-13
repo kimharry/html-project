@@ -25,9 +25,11 @@
             <ol>
                 <li><a href="#vscode" style="color: dodgerblue">Visual Studio Code</a></li>
                 <ul>
-                    <li><a href="#copilot" style="color: rgb(38, 69, 211);">Copilot</a></li>
+                    <li><a href="#copilot" style="color: rgb(38, 69, 211);">Github Copilot</a></li>
                     <li><a href="#tabnine" style="color:blueviolet">Tabnine</a></li>
                 </ul>
+                <li><a href="#pycharm" style="color: rgb(149, 218, 47)">Pycharm</a></li>
+                <li><a href="#jupyter" style="color: rgb(227, 126, 61)">Jupyter Notebook</a></li>
                 <li><a href="#git&github" style="color: grey">Git & Github</a></li>
                 <li><a href="#stackOverflow" style="color: orange">Stack Overflow</a></li>
             </ol>
@@ -48,15 +50,15 @@
     <div class="main">
         <div id="intro">
             <h2>서론</h2>
-            본 웹페이지는 전북과고 학생들을 위한 알아놓으면 어딘가 써먹을지도 모르는 프로그램들과 웹사이트들의 모음집으로써,
-            필자가 정보부인 관계로 코딩 파트만 뭔가 전문적인것 같다면 착각은 아닐것이다. 최대한 무료 프로그램들로 구성하려 노력했으나...
-            마지막 영상 편집 부분만은 어쩔 수 없었다. 부디 이해해 주길. 뭔가 서론이 쓸데없이 길어지고 멍멍거리는 소리로 가득차고 있는
-            것 같으니 이만 줄이고 본문으로 넘어가자.
+            본 웹페이지는 대-전북과학고 학생들을 위한 알아놓으면 어딘가 써먹을지도 모르는 프로그램들과 웹사이트들의 모음집으로써,
+            필자가 정보부인 관계로 코딩 파트만 뭔가 전문적인 것처럼 보인다. 사실 "출처: 내 뇌"인 엄청난 뇌피셜 글이지만 최대한 현실에 기반해서 썼다.
+            왠만하면 무료 프로그램들로 구성하려 노력했으나... 마지막 영상 편집 부분만은 어쩔 수 없었다. 부디 이해해 주길.
+            뭔가 서론이 쓸데없이 길어지고 멍멍거리는 소리로 가득차고 있는 것 같으니 이만 줄이고 본문으로 넘어가자.
         </div>
 
         <br><br>
 
-        <div style="color:crimson">본 웹페이지는 필자가 시험 끝나고 멘탈 터진 채로 만들어서 멍소리가 많다.
+        <div style="color:crimson">본 웹페이지는 필자가 시험 끝나고 멘탈 터진 채로 만들어서 <del>개소리</del>헛소리가 많다.
             주의하시길 바란다.</div>
         <br>
 
@@ -66,34 +68,43 @@
 
             <div id="vscode">
                 <h3>Visual Studio Code</h3>
-                가장 많이 쓰이는 텍스트 에디터 중 하나인 Visual Studio Code. 흔히 VSCode라 부른다. MS에서 개발한 텍스트 에디터인데,
-                무료 오픈소스에 커스터마이징이 가능하고, 정말 강력한 기능들을 확장을 설치할 수 있어 프로그래머들이 애용한다.
+                <center><img src=".\img\vscode.png" width="200px"><br></center>
+                <center style="font-size: medium;">vscode 로고 (출처: https://en.wikiversity.org/wiki/Visual_Studio_Code)
+                </center><br>
+                가장 많이 쓰이는 텍스트 에디터 중 하나인 Visual Studio Code. 흔히 vscode라 부른다. MS에서 개발한 텍스트 에디터인데,
+                무료 오픈소스에 커스터마이징이 가능하고, 정말 강력한 기능들을 가진 확장들을 설치할 수 있어 프로그래머들이 애용한다.
                 예를 들어, Formatter라는 확장을 이용하면 코드를 이쁘게 알아서 고쳐주고, 화면 테마와 아이콘도 이쁘게 만들 수 있다!
                 (물론 여기서 이쁘다의 기준은 어디까지나 공돌이들의 기준이다. 마음에 안든다면 공돌이들을 탓하자)
                 심지어 프로그램이 매우 가벼워서 저사양 컴에서도 꽤나 빠르게 돌아간다. 자동완성 기능도 매우 좋으니 꼭 한 번쯤 써보도록 하자.
                 <br>
                 <a href="https://code.visualstudio.com/" target="_blank" class="hyperlink"
-                    style="color: dodgerblue;">VSCode 홈페이지</a>
+                    style="color: dodgerblue;">vscode 홈페이지</a>
                 <br><br>
 
-                기왕 VSCode 알아본 김에 인공지능을 이용한 코드 자동완성 확장도 알아보자.
+                기왕 VSCode 알아본 김에 인공지능을 이용한 코드 자동완성 확장들도 알아보자.
 
                 <div id="copilot">
-                    <h4>Copilot</h4>
-                    Copilot은 Github에서 개발한 코드 자동완성 인공지능으로, VSCode에서 코딩을 하고 있으면 자동으로 다음 코드를 추천해준다.
+                    <h4>Github Copilot</h4>
+                    <center><img src=".\img\copilot.png" width="200px"></center>
+                    <center style="font-size: medium;">Github Copilot 로고 (출처:
+                        https://github.com/features/copilot/signup)</center><br>
+                    Github Copilot은 Github에서 개발한 코드 자동완성 인공지능으로, vscode에서 코딩을 하고 있으면 자동으로 다음 코드를 추천해준다.
                     그런데 이 기능이 정말 강력한 것이, 간단한 계산기 같은 프로그램은 주석만 잘 입력하면 Copilot만을 이용해서도 만들 수 있다.
-                    단점이라면 현재 베타 테스트 중이라 신청을 하고 승인을 해줘야 사용 가능하지만... 실은 VSCode와 Github 계정이 연동
+                    단점이라면 현재 베타 테스트 중이라 신청을 하고 승인을 해줘야 사용 가능하지만... 실은 vscode와 Github 계정이 연동
                     되어 있으면 거의 바로 해주는 듯 하다(뇌피셜 주의). 그리고 이 인공지능이 Github의 퍼블릭 소스코드를 이용해 학습된
                     것이라 저작권 문제가 발생할 수 있어서 실무에서는 쓰이지 않는다고 한다.
                     <br>
                     <a href="https://copilot.github.com/" target="_blank" class="hyperlink"
-                        style="color:rgb(38, 69, 211);">Copilot 홈페이지</a>
+                        style="color:rgb(38, 69, 211);">Github Copilot 홈페이지</a>
                 </div>
 
                 <div id="tabnine">
                     <h4>Tabnine</h4>
-                    Tabnine도 Copilot처럼 인공지능을 활용해 코드를 자동으로 추천해주는 확장인데, 조금 다른 점은 Copilot은 코드를
-                    여러 줄을 한 번에 추천하지만, Tabnine은 코드를 한 단어 정도만 추천해준다. 그리고, Tabnine이 Copilot보다 많은
+                    <center><img src=".\img\tabnine.jpg" width="200px"></center>
+                    <center style="font-size: medium;">Tabnine 로고 (출처:
+                        https://www.youtube.com/channel/UC3ZLFXRRmK3XbT5Oq0qPLqA)</center><br>
+                    Tabnine도 Copilot처럼 인공지능을 활용해 코드를 자동으로 추천해주는 확장인데, Copilot과 비교해보자면 Copilot은 코드를
+                    여러 줄을 한 번에 추천하지만, Tabnine은 코드를 한 단어에서 한 줄 정도만 추천해준다. 반대로, Tabnine이 Copilot보다 많은
                     종류의 프로그래밍 언어를 제공하고 추천 속도도 더 빠르다는 장점도 있다. 둘 중 취향에 맞게 골라쓰면 되겠다.
                     물론 둘 다 무료다.
                     <br>
@@ -102,15 +113,15 @@
                 </div>
             </div>
 
-            <div id="Pycharm">
+            <div id="pycharm">
                 <h3>Pycharm</h3>
-                Pycharm은 Jetbrains에서 개발한 파이썬 IDE(통합 개발 환경) 중 가장 많이 쓰이는 프로그램이다.
-                <del>(근데 어쨌든 파이참 안쓸거면 vscode 말곤 선택지가 없다)</del>
+                <center><img src=".\img\pycharm.png" width="200px"></center>
+                <center style="font-size: medium">Pycharm 로고 (출처: https://www.jetbrains.com/pycharm/)</center><br>
+                Pycharm은 Jetbrains에서 개발한 파이썬 IDE(통합 개발 환경)로, 파이썬 프로그래밍에서 가장 많이 쓰이는 프로그램 중 하나이다.
                 virtual env와 anaconda를 활용한 가상 환경 설정을 프로젝트를 만들 때 기본으로 지원하고, 수준 높은 코드 자동완성을 지원한다.
-                또한 다음에 설명할 Git을 사용한다면 다양한 기능들을 Pycharm 내부에서 사용할 수 있다는 편리한 점이 있다.
+                또한 다다음에 설명할 Git을 사용한다면 다양한 기능들을 Pycharm 내부에서 사용할 수 있다는 편리한 점이 있다.
                 개인적으로는 다양한 언어를 한 번에 사용할 수 있는 vscode를 선호하긴 하지만 파이썬만 사용할 것이라면 Pycharm도 좋은
                 선택지이다.
-                <br>
                 무료 버전과 유료 버전이 있지만 무료 버전을 사용해도 순수 파이썬 개발에는 충분하므로 과학 분야나 웹 파이썬 개발 등에
                 이용하는 것이 아니라면 굳이 유료 버전을 사용할 이유는 없다.
                 <br>
@@ -118,8 +129,27 @@
                     style="color:rgb(149, 218, 47)">Pycharm 홈페이지</a>
             </div>
 
+            <div id="jupyter">
+                <h3>Jupyter Notebook</h3>
+                <center><img src=".\img\jupyter.png" style="background-color: white;" width="400px"></center>
+                <center style="font-size: medium;">Jupyter Notebook 로고 (출처: https://jupyter.org/)</center><br>
+                Jupyter Notebook은 노트북이라는 형식을 사용하는 텍스트 에디터이다. 대부분 파이썬 프로그래밍에 사용되는데,
+                블록 단위로 나눠서 프로그래밍을 하고 결과를 볼 수 있다는 특징 덕분에 특히 데이터 사이언스나 인공지능 분야에서 많이 쓰인다.
+                다른 프로그램들을 사용하다가 처음 사용해보면 정말 어색하고 불편하지만 막상 익숙해지면 다른 프로그램은 다시 못 쓸 정도로
+                독특하면서도 매력적인 프로그램이다. 개인적으로 적응하는데 시간이 조금 오래 걸려서 잠시 던져놓고(...) 있지만
+                윤 모씨는 애용하고 있는 걸로 알고 있다.
+                <br>
+                <a href="https://jupyter.org/" target="_blank" class="hyperlink"
+                    style="color: rgb(227, 126, 61);">Jupyter Project 홈페이지</a>
+            </div>
+
             <div id="git&github">
                 <h3>Git & Github</h3>
+                <center><img src=".\img\git.png" width="400px"></center>
+                <center style="font-size: medium">Git 로고 (출처: https://git-scm.com/downloads/logos)</center><br>
+                <center><img src=".\img\github.png" width="200px"></center>
+                <center style="font-size: medium">Github 로고 <del>고양이 귀여워</del> (출처: https://github.com/logos)</center>
+                <br>
                 Git과 Github는 일반적인 수준에서는 거의 쓸일이 없는 기능이므로... 코딩에 별로 관심이 없으면 그냥 깔끔하게 스킵하자.
                 <br>
                 Git은 분산 버전 관리 시스템이란 건데, 자세히 말하면 머리 아프니까 간략히 설명하자면 파일의 변경사항을 추적하고 여러
@@ -130,19 +160,23 @@
                 처음 배우기는 어렵지만 일단 배워 놓으면 실무에서도 많이 써먹는 애들이기 때문에 언젠가는 배워볼 것을 추천한다.
                 유튜브 뒤져보면 강의는 많을 것이다.
                 <br>
+                <a href="https://git-scm.com/" target="_black" class="hyperlink" style="color: grey;">Git 홈페이지</a><br>
                 <a href="https://github.com/" target="_blank" class="hyperlink" style="color:grey;">Github
-                    웹사이트</a>
+                    홈페이지</a>
             </div>
 
             <div id="stackOverflow">
                 <h3>Stack Overflow</h3>
+                <center><img src=".\img\stackoverflow.png" width="200px"></center>
+                <center style="font-size: medium;">Stack Overflow 로고<br>(출처:
+                    https://pbs.twimg.com/profile_images/1220067947798024192/30eZhfxx_400x400.png)</center><br>
                 전 세계의 개발자들의 포럼 같은 곳이다. 혹시 코딩하다 생긴 오류를 구글에 검색해봤으면 한 번쯤은 봤을 사이트인데,
                 아무래도 수많은 개발자들이 애용하는 사이트이기 때문에 정말 수많은 케이스들에 대한 해답이 있다. 딱 한가지 아쉬운 점은
                 영어라는거... 물론 자동 번역 기능이라도 쓰면 대충 알아는 들을 수 있어서 괜찮다. 혹시 코딩을 하다 모르는게 생기면 한
                 번 찾아가서 검색해보자. 아마 똑같은 일을 겪었던 많은 뉴비들의 하소연 글과 고인물들의 답변이 기다리고 있을 것이다.
                 <br>
                 <a href="https://stackoverflow.com/" target="_blank" class="hyperlink" style="color: orange;">
-                    Stack Overflow 웹사이트</a>
+                    Stack Overflow 홈페이지</a>
                 <br><br>
             </div>
         </div>
@@ -152,6 +186,11 @@
             이번에는 수학에 관련된 웹사이트들이다. 역시 바로 시작해보자.
             <div id="geogebra">
                 <h3>Geogebra & Desmos</h3>
+                <center><img src=".\img\geogebra.png" width="400px"></center>
+                <center style="font-size: medium;">Geogebra 로고 (출처: https://www.geogebra.org/)</center><br>
+                <center><img src=".\img\desmos.png" width="200px"></center>
+                <center style="font-size: medium;">Desmos 로고<br>(출처:
+                    https://play.google.com/store/apps/details?id=com.desmos.calculator&hl=en_US&gl=US)</center><br>
                 지오지브라와 데스모스는 온라인 그래프 계산기로, 이름 그대로 온라인에서 자유롭게 그래프와 도형을 그리며 계산할 수 있다.
                 지오지브라와 데스모스를 한군데에서 소개하고 있긴 하지만 이 둘은 조금 성격이 다르다. 지오지브라에 훨씬 많은 기능들이
                 있고, 지오지브라는 도형의 작도 등도 가능하지만, 데스모스에 비해 느리다는 단점이 있다. 필자 개인적으로는 지오지브라의
@@ -159,25 +198,32 @@
                 되겠다.
                 <br>
                 <a href="https://www.geogebra.org/?lang=ko" target="_blank" class="hyperlink"
-                    style="color:green;">Geogebra</a>
+                    style="color:green;">Geogebra 홈페이지</a>
                 <br>
-                <a href="https://www.desmos.com/?lang=ko" target="_blank" class="hyperlink"
-                    style="color:green;">Desmos</a>
+                <a href="https://www.desmos.com/?lang=ko" target="_blank" class="hyperlink" style="color:green;">Desmos
+                    홈페이지</a>
             </div>
 
             <div id="wolfram">
                 <h3>Wolfram Alpha & Wolfram Cloud</h3>
-                공대생들의 영원한 친구들 중 하나, 울프람 알파(일명 킹프람 갓파)는 수학에 관련된 질문을 하면 그 질문에 대한 해답을 알려준다.
+                <center><img src=".\img\wolfram alpha.png" width="400px">
+                </center>
+                <center style="font-size: medium;">Wolfram Alpha 로고 (출처: https://www.wolframalpha.com/)</center><br>
+                <center><img src=".\img\wolfram cloud.png" width="200px"">
+                </center>
+                <center style=" font-size: medium;">Wolfram Cloud 로고<br>(출처:
+                    https://play.google.com/store/apps/details?id=com.wolfram.android.cloud&hl=en_US&gl=US)</center><br>
+                공대생들의 영원한 친구들 중 하나, 울프람 알파<del>(일명 킹프람 갓파)</del>는 수학에 관련된 질문을 하면 그 질문에 대한 해답을 알려준다.
                 당연히 수식을 입력하면 정답이 나오고 자연어로 입력해도 알맞는 해답이 나온다. 수학뿐만 아니라 과학 분야나 인문학
                 분야의 지식들도 엄청난 양이 입력되어 있어서 일단 궁금한거 찾아보면 왠만하면 나온다. 심지어 인물이나 캐릭터를 그래프로
                 그려서 보여주기도 한다. 울프람 알파는 Mathematica라는 프로그래밍 언어에 의해 작동되는데, 이 Mathematica를 사용할
                 수 있는 곳이 울프람 클라우드이다. 은근 재미있으니 수학과 정보에 관심있는 친구들은 한 번 도전해보자.
                 <br>
                 <a href="https://www.wolframalpha.com/" target="_blank" class="hyperlink" style="color:crimson;">
-                    Wolfram Alpha</a>
+                    Wolfram Alpha 홈페이지</a>
                 <br>
                 <a href="https://www.wolframcloud.com/" target="_blank" class="hyperlink" style="color:crimson;">
-                    Wolfram Cloud</a>
+                    Wolfram Cloud 홈페이지</a>
             </div>
         </div>
 
@@ -188,6 +234,9 @@
 
             <div id="davinci">
                 <h3>DaVinci Resolve</h3>
+                <center><img src=".\img\davinci.png" width="200px"></center>
+                <center style="font-size: medium;">Davinci Resolve 로고 (출처:
+                    https://apps.apple.com/us/app/davinci-resolve-studio/)</center><br>
                 다빈치 리졸브가 무료 영상 편집 프로그램 중에서는 가장 최고인 것 같다. 이 프로그램은 할리우드 영화를 제작할 때도
                 색 보정만큼에서는 거의 필수적으로 사용되는 전문적이면서도 매우 뛰어난 프로그램이다.
                 처음 배우기는 조금 빡세도 일단 배워놓으면 정말 까먹기 직전 쯤마다 한 번씩은 쓸일이 생긴다.
@@ -201,6 +250,9 @@
 
             <div id="premiere">
                 <h3>Premiere Pro</h3>
+                <center><img src=".\img\premiere.png" width="200px"></center>
+                <center style="font-size: medium;">Premiere Pro 로고 (출처:
+                    https://en.wikipedia.org/wiki/Adobe_Premiere_Pro)</center><br>
                 프리미어 프로는 아마 현재 가장 많이 쓰이는 영상 편집 프로그램일 것이다. 대규모 편집 작업에서는 가장 많이 쓰이는 프로그램이며,
                 그만큼 성능도 뛰어나고 일단 써보면 제대로 전문가용이구나가 느껴진다. 하지만 그만큼 더럽게 비싸다. 정액제 형식으로 월에
                 24,000원씩인데, 물론 영상 편집이 생업인 사람들에게는 충분히 투자할만한 돈이지만 취미로써는 싼 가격은 아니다. 그러니 본인이
@@ -213,7 +265,7 @@
 
         <div id="ending">
             <h2>결론</h2>
-            자, 이렇게 해서 각 분야별로 알아놓으면 언젠간 쓸데 있을 프로그램들을 소개해봤다. 아마 빼먹은 것들도 좀 많긴 하겠지만
+            자, 이렇게 해서 각 분야별로 알아놓으면 언젠간 쓸데있을 프로그램들을 소개해봤다. 아마 빼먹은 것들도 좀 많긴 하겠지만
             모두를 적기엔 여백이 부족하여(???) 적지 않도록 하겠다. 그럼 이 모음집들이 조금이나마 도움이 됐기를!
         </div>
     </div>
